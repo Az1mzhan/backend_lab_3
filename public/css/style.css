@@ -1,0 +1,68 @@
+:root {
+  --navy-blue: #0c359e;
+  --pearly-pink: #ee99c2;
+  --google-grey: rgb(35, 35, 35);
+  --white-smoke: #f6f5f5;
+}
+
+body {
+  background: linear-gradient(35deg, var(--navy-blue), var(--pearly-pink))
+    no-repeat fixed;
+}
+
+form {
+  width: 62.5%;
+}
+
+form > div {
+  width: 100%;
+  margin-top: 2.5vh;
+}
+
+form > div:last-child {
+  margin-top: 5vh;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 0.25vh solid var(--google-grey);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input,
+textarea,
+#email-form {
+  background-color: var(--white-smoke);
+}
+
+label,
+#submit-email-form-btn {
+  font-weight: bold;
+}
+
+.container-fluid {
+  height: auto;
+  min-height: 100vh;
+}
+
+#email-form {
+  width: 25vw;
+  padding: 2.5vh 0;
+  color: black;
+  border-radius: 0.5vw;
+  box-shadow: 0 0.25vw 1vw var(--google-grey);
+}
+
+#submit-email-form-btn {
+  border: 0.25vh solid var(--google-grey);
+}
+
+#submit-email-form-btn:hover {
+  background-color: black;
+  color: white;
+}
